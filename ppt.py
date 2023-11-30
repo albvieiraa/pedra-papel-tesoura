@@ -1,7 +1,7 @@
 import random
 
 def jogar():
-    user = input("Escolha entre: 'pd' para pedra, 'pp' para papel, 'ts' para tesoura")
+    user = input("Escolha entre: 'pd' para pedra, 'pp' para papel, 'ts' para tesoura: ")
     computer = random.choice(['pd','pp','ts'])
 
     if user == computer:
@@ -10,8 +10,8 @@ def jogar():
 # pd > ts, ts > pp, pp >pd
     if vencer(user, computer):
         return 'Você venceu!'
-    else:
-        return 'Você perdeu!'
+
+    return 'Você perdeu!'
 
 
 def vencer (jogador, oponente):
